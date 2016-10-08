@@ -1,1 +1,2 @@
 # reduxDemowithDevTool
+简单的redux例子，使用devtool来进行数据调试
