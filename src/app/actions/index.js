@@ -1,5 +1,5 @@
 import { ADD_ITEM, DELETE_ITEM, DELETE_ALL, FILTER_ITEM } from '../constants/actionTypes'
-
+//中间件
 export function addItem() {
     return dispatch => {
         setTimeout(() => dispatch({type: ADD_ITEM}), 1000)
