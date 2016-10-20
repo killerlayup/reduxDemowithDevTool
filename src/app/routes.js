@@ -4,6 +4,8 @@ import { Route, IndexRoute } from 'react-router' // 引入react路由
 import App from './containers/App'
 import AddItems from './containers/AddItems'
 import Foo from './containers/Foo'
+import asyncFetchPosts from './containers/asyncFetchPosts'
+import getGithubUsers from './containers/getGithubUsers'
 
 //<IndexRoute 和<Route 有什么区别
 export default (
@@ -11,5 +13,7 @@ export default (
         <IndexRoute component={AddItems}/>
         <Route path="index" component={AddItems}/>
         <Route path="foo" component={Foo}/>
+        <Route path="fetchPost" component={asyncFetchPosts}/>
+        <Route path="fetchGithubUsers" component={getGithubUsers}/>
     </Route>
 )

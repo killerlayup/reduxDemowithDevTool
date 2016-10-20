@@ -13,10 +13,16 @@ export default class App extends Component {
                         </div>
                         <ul className="nav navbar-nav">
                             <li>
-                                <Link to="/index" activeStyle={{color: '#555', backgroundColor: '#e7e7e7'}}>计数器</Link>
+                                <Link to="/index" activeStyle={{color: '#555', backgroundColor: '#e7e7e7'}}>删除添加Item</Link>
                             </li>
                             <li>
                                 <Link to="/foo" activeStyle={{color: '#555', backgroundColor: '#e7e7e7'}}>静态数据</Link>
+                            </li>
+                            <li>
+                                <Link to="/fetchPost" activeStyle={{color: '#555', backgroundColor: '#e7e7e7'}}>异步获取</Link>
+                            </li>
+                            <li>
+                                <Link to="/fetchGithubUsers" activeStyle={{color: '#555', backgroundColor: '#e7e7e7'}}>fetchGithubUsers</Link>
                             </li>
                         </ul>
                     </div>

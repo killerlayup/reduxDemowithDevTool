@@ -32,7 +32,7 @@ let AddItems = React.createClass({
 })
 //connect(mapStateToProps, mapDispatchToProps)(Component)
 //把state disaptch 转换成props, 传到组件中 返回给我们使用
-//只返回组件需要的部分state
+//只返回组件需要的部分state  这边的item是在reducer中定义的
 function mapStateToProps (state) {
     // body...
     return {
@@ -53,4 +53,7 @@ function mapDispatchToProps (dispatch){
 // }), dispatch => ({
 //     actions: bindActionCreators(ItemsActions, dispatch)
 // }))(AddItems)
-export default connect(mapStateToProps,mapDispatchToProps)(AddItems);
+export default AddItems = connect(
+    mapStateToProps,
+    mapDispatchToProps
+    )(AddItems);

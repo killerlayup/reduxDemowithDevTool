@@ -5,7 +5,6 @@ import classNames from 'classnames'
 class Content extends Component {
     render() {
         let items = this.props.items.toArray()
-
         return (
             <ul>
                 {items.map(v => <LiItem filter={this.props.filter} item={v} key={v} deleteItem={this.props.deleteItem} />)}

@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react' // 引入React
 import { connect } from 'react-redux' // 引入connect 
 import List from '../components/List'  // 引入展示组件List
-
+//dump component
 class Foo extends Component {
     render() {
     
